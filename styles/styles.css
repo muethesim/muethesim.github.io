@@ -61,7 +61,7 @@ html {
     width: 100%;
     height: 2px;
     border-radius: 4px;
-    background-color: rgb(250, 250, 15);
+    background-color: rgb(255, 255, 255);
     bottom: 0;
     left: 0;
     transform-origin: right;
@@ -150,7 +150,7 @@ html {
 }
 
 .nav-links li a:hover {
-    color: rgb(235, 235, 22);
+    color: rgb(255, 255, 255);
 }
 
 .btnfos {
