@@ -1,0 +1,37 @@
+HOME : 
+----------
+
+Register
+About Us / Vision
+Gallery
+
+
+
+Events : 
+----------
+
+List of Events
+
+
+
+Achievements : 
+---------------
+
+Can be done as a list of images of as bulleted text. Best Way : Images
+
+
+
+Contact Us : 
+---------------
+
+Office Address
+Mail
+Phone
+Whatsapp
+Mailing template
+
+
+Gallery : 
+----------------
+
+Training Images.
