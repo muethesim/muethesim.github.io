@@ -5,6 +5,7 @@ window.addEventListener("scroll", function () {
     var unline2 = this.document.getElementById('op2')
     var unline3 = this.document.getElementById('op3')
     var unline4 = this.document.getElementById('op4')
+    var unline5 = this.document.getElementById('op5')
 
     if (scrollPosition > 100) {
         container.classList.remove('navbar-des')
@@ -17,6 +18,8 @@ window.addEventListener("scroll", function () {
         unline3.classList.add('underline-effect-colored')
         unline4.classList.remove('underline-effect')
         unline4.classList.add('underline-effect-colored')
+        unline5.classList.remove('underline-effect')
+        unline5.classList.add('underline-effect-colored')
         logo.classList.remove('logo')
         logo.classList.add('logo-colored')
     } else {
@@ -30,6 +33,8 @@ window.addEventListener("scroll", function () {
         unline3.classList.remove('underline-effect-colored')
         unline4.classList.add('underline-effect')
         unline4.classList.remove('underline-effect-colored')
+        unline5.classList.add('underline-effect')
+        unline5.classList.remove('underline-effect-colored')
         logo.classList.add('logo')
         logo.classList.remove('logo-colored')
     }
