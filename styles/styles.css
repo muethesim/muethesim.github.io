@@ -167,12 +167,14 @@ html {
     width: 100%;
 }
 
-.btnfos-1 {
+.btnfos-1,
+.btnfos-2 {
     background: rgb(79, 79, 76);
     font-weight: 100;
 }
 
-.btnfos-1 svg {
+.btnfos-1 svg,
+.btnfos-2 svg {
     position: absolute;
     left: 0;
     top: 0;
@@ -180,7 +182,8 @@ html {
     height: 45px;
 }
 
-.btnfos-1 rect {
+.btnfos-1 rect,
+.btnfos-2 rect {
     fill: none;
     stroke: #fff;
     stroke-width: 1;
@@ -193,7 +196,15 @@ html {
     font-weight: 900;
 }
 
-.btnfos-1:hover rect {
+.btnfos-2:hover {
+    background: rgba(225, 51, 45, 0);
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: #000;
+}
+
+.btnfos-1:hover rect,
+.btnfos-2:hover rect {
     stroke-width: 5;
     stroke-dasharray: 15, 310;
     stroke-dashoffset: 48;
