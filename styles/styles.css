@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Rubik:wght@400;500&display=swap');
 
 
 * {
@@ -17,6 +17,10 @@ html {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: Rubik;
+}
+
+h2 {
+    font-weight: 500;
 }
 
 .letter-spacing {
