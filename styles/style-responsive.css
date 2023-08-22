@@ -9,4 +9,18 @@
         align-items: center;
         justify-content: center;
     }
+
+    .logo img {
+        width: auto;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    .logo-colored img {
+        width: auto;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    
 }
