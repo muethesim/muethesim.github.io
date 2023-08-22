@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Raleway:wght@500&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Rubik&display=swap');
 
 
 * {
@@ -12,13 +10,17 @@
     transition-duration: .6s;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;
-    font-family: Roboto Mono;
+    font-family: Rubik;
 }
 
 html {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: Roboto Mono;
+    font-family: Rubik;
+}
+
+.letter-spacing {
+    letter-spacing: 0.08em;
 }
 
 .navbar-des {
