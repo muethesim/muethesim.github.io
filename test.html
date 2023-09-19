@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images in Container</title>
+    <style>
+        /* Define styles for the container */
+        .container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-image: url('/assets/img/banner.png'); /* Replace 'background.jpg' with your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Style for images */
+        .image {
+            position: absolute;
+            max-width: 50%; /* Adjust the size of the images as needed */
+        }
+
+        /* Left top image */
+        .left-top {
+            top: 0;
+            left: 0;
+        }
+
+        /* Right bottom image */
+        .right-bottom {
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left top image -->
+        <img src="/assets/img/card.png" alt="Left Top Image" class="image left-top">
+
+        <!-- Right bottom image -->
+        <img src="/assets/img/card.png" alt="Right Bottom Image" class="image right-bottom">
+    </div>
+</body>
+</html>

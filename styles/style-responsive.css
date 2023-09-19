@@ -2,6 +2,7 @@
     .fullscreen-bg {
         position: relative;
         background: url('../assets/img/banner2.png') no-repeat center center fixed;
+        background-size: auto calc(100% - 90px);
         background-size: cover;
         height: 100vh;
         color: #fff;

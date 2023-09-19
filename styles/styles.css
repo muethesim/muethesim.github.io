@@ -27,6 +27,17 @@ h2 {
     letter-spacing: 0.08em;
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(254,243,1,255);
+    z-index: 9998;
+}
+
 .navbar-des {
     background-color: transparent;
     color: #fff;
@@ -200,9 +211,10 @@ h2 {
 }
 
 .btnfos-1:hover {
-    background: rgba(225, 51, 45, 0);
+    background: rgba(255, 255, 255, 0);
     letter-spacing: 1px;
     font-weight: 900;
+    color: #ffffff;
 }
 
 .btnfos-2:hover {

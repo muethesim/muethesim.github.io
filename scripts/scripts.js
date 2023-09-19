@@ -5,6 +5,7 @@ var unline3 = this.document.getElementById("op3");
 var unline4 = this.document.getElementById("op4");
 var unline5 = this.document.getElementById("op5");
 var toggler = this.document.getElementsByClassName("toggle-cls");
+var toggleBtn = this.document.getElementById("toggle-btn");
 
 function normal() {
 
@@ -59,3 +60,15 @@ window.addEventListener("scroll", function () {
     colored();
   }
 });
+
+toggleBtn.addEventListener("click", toggleOverlay)
+
+function toggleOverlay() {
+  var overlay = document.getElementById('overlay');
+  if (overlay.style.display === 'block') {
+      overlay.style.display = 'none';
+  } else {
+      overlay.style.display = 'block';
+      overlay.focus();
+  }
+}
