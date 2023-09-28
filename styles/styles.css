@@ -137,6 +137,11 @@ h2 {
     justify-content: center;
 }
 
+.bgapplied {
+    background: url('../assets/img/newbg.png') no-repeat center center;
+    background-size: cover;
+}
+
 .nav-links {
     margin-right: 10px;
 }

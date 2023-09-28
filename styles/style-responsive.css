@@ -1,7 +1,7 @@
 @media screen and (max-width: 992px) {
     .fullscreen-bg {
         position: relative;
-        background: url('../assets/img/banner2.png') no-repeat center center fixed;
+        background: url('../assets/img/banner2.png') no-repeat center center;
         background-size: auto calc(100% - 90px);
         background-size: cover;
         max-width: 100vw;
