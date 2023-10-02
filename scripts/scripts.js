@@ -6,6 +6,7 @@ var unline4 = this.document.getElementById("op4");
 var unline5 = this.document.getElementById("op5");
 var toggler = this.document.getElementsByClassName("toggle-cls");
 var toggleBtn = this.document.getElementById("toggle-btn");
+var exitBtn = this.document.getElementById("close-btn");
 
 function normal() {
 
@@ -61,14 +62,16 @@ window.addEventListener("scroll", function () {
   }
 });
 
-toggleBtn.addEventListener("click", toggleOverlay)
+toggleBtn.addEventListener("click", toggleOverlay);
+exitBtn.addEventListener("click", closeOverlay);
 
 function toggleOverlay() {
   var overlay = document.getElementById('overlay');
-  if (overlay.style.display === 'block') {
-      overlay.style.display = 'none';
-  } else {
-      overlay.style.display = 'block';
-      overlay.focus();
-  }
+  overlay.style.display = 'block';
+  overlay.focus();
+}
+
+function closeOverlay() {
+  var overlay = document.getElementById('overlay');
+  overlay.style.display = 'none';
 }
