@@ -68,10 +68,12 @@ exitBtn.addEventListener("click", closeOverlay);
 function toggleOverlay() {
   var overlay = document.getElementById('overlay');
   overlay.style.display = 'block';
+  exitBtn.classList.add("show-button");
   overlay.focus();
 }
 
 function closeOverlay() {
   var overlay = document.getElementById('overlay');
+  exitBtn.classList.remove("show-button");
   overlay.style.display = 'none';
 }
