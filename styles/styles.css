@@ -57,10 +57,14 @@ h2 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 120dvh;
-  /* height: --doc-height; */
+  height: 100dvh;
   background-color: rgba(35,26,113,255);
   z-index: 9998;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }
 
 .navbar-des {

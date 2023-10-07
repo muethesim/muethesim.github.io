@@ -62,6 +62,14 @@ window.addEventListener("scroll", function () {
   }
 });
 
+function disableScroll() {
+  document.body.classList.add("stop-scrolling");
+}
+
+function enableScroll() {
+  document.body.classList.remove("stop-scrolling");
+}
+
 toggleBtn.addEventListener("click", toggleOverlay);
 exitBtn.addEventListener("click", closeOverlay);
 
@@ -69,11 +77,13 @@ function toggleOverlay() {
   var overlay = document.getElementById('overlay');
   overlay.style.display = 'block';
   exitBtn.classList.add("show-button");
+  disableScroll();
   overlay.focus();
 }
 
 function closeOverlay() {
   var overlay = document.getElementById('overlay');
   exitBtn.classList.remove("show-button");
+  enableScroll();
   overlay.style.display = 'none';
 }
