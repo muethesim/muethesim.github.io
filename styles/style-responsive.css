@@ -1,35 +1,35 @@
 @media screen and (max-width: 992px) {
-    .fullscreen-bg {
-        position: relative;
-        background: url('../assets/img/banner2.png') no-repeat center center;
-        background-size: auto calc(100% - 90px);
-        background-size: cover;
-        max-width: 100vw;
-        height: 100vh;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .fullscreen-bg {
+    position: relative;
+    background: url("../assets/img/banner2.png") no-repeat center center;
+    background-size: auto calc(100% - 90px);
+    background-size: cover;
+    max-width: 100vw;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .logo img {
-        width: auto;
-        height: 100px;
-    }
+  .logo img {
+    width: auto;
+    height: 100px;
+  }
 
-    .logo-colored img {
-        width: auto;
-        height: 50px;
-    }
+  .logo-colored img {
+    width: auto;
+    height: 50px;
+  }
 
-    .more-btn {
-        background-color: rgba(35,26,113,255);
-        font-size: xx-small;
-        padding: 5px;
-        padding-right: 10px;
-        padding-left: 10px;
-        border-radius: 5px;
-    }
-
-
+  .more-btn {
+    background-color: #9fa6b2;
+    text-decoration: none;
+    color: rgba(35, 26, 113, 255);
+    font-size: xx-small;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+  }
 }
