@@ -10,7 +10,6 @@ var exitBtn = this.document.getElementById("close-btn");
 
 function normal() {
 
-
   container.classList.remove("navbar-des");
   container.classList.add("navbar-colored");
   navLinks.classList.remove("nav-links");
@@ -30,6 +29,7 @@ function normal() {
     toggler[i].classList.add("toggler-icon-colored");
   }
 }
+
 
 function colored() {
   container.classList.add("navbar-des");
@@ -59,6 +59,12 @@ window.addEventListener("scroll", function () {
     normal();
   } else {
     colored();
+  }
+
+  if(scrollPosition > 180) {
+    document.getElementById("startText").style.opacity = 0;
+  } else {
+    document.getElementById("startText").style.opacity = 1;
   }
 });
 
