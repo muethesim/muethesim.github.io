@@ -143,11 +143,22 @@
         </div>
       </section>
       <section id="contact">
-        <div class="container" style="align-items: center;">
+        <div class="container" style="align-items: center">
           <div class="contact-wrapper">
             <!-- Left contact page -->
 
-            <form id="contact-form" class="form-horizontal" role="form">
+            <form
+              id="contact-form"
+              class="form-horizontal"
+              role="form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="8d57c431-6fee-408e-91e8-e0a81b1495d5"
+              />
               <div class="form-group">
                 <input
                   type="text"
@@ -205,9 +216,7 @@
 
                 <li class="list-item">
                   <i class="fa fa-phone fa-2x"
-                    ><span class="contact-text phone"
-                      >9876543210</span
-                    ></i
+                    ><span class="contact-text phone">9876543210</span></i
                   >
                 </li>
 
@@ -274,5 +283,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="scripts/scripts.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>
