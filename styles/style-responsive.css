@@ -1,4 +1,4 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 850px) {
   .fullscreen-bg {
     position: relative;
     background: url("../assets/img/banner2.png") no-repeat center center;
@@ -31,5 +31,59 @@
     padding-right: 10px;
     padding-left: 10px;
     border-radius: 5px;
+  }
+
+  .page-header {
+    font-size: 48px;
+  }
+
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+  .direct-contact-container, .form-horizontal {
+    margin: 0 auto;
+    max-width: 300px;
+  }  
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    margin: 0 auto;
+  }
+ 
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
   }
 }
