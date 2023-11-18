@@ -55,7 +55,7 @@ function colored() {
 window.addEventListener("scroll", function () {
   const scrollPosition = window.scrollY;
 
-  if (scrollPosition > 100) {
+  if (scrollPosition > 70) {
     normal();
   } else {
     colored();

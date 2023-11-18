@@ -486,15 +486,39 @@ body {
 /* banners */
 
 .banner1 {
-  background-color:hsla(0,3%,37%,1);
-  background-image:
-  radial-gradient(at 40% 20%, hsla(279,0%,38%,1) 0px, transparent 50%),
-  radial-gradient(at 80% 0%, hsla(188,2%,13%,1) 0px, transparent 50%),
-  radial-gradient(at 4% 45%, hsla(354,1%,44%,1) 0px, transparent 50%),
-  radial-gradient(at 80% 50%, hsla(340,0%,0%,1) 0px, transparent 50%),
-  radial-gradient(at 0% 100%, hsla(15,3%,65%,1) 0px, transparent 50%),
-  radial-gradient(at 80% 100%, hsla(240,1%,32%,1) 0px, transparent 50%),
-  radial-gradient(at 0% 0%, hsla(335,0%,54%,1) 0px, transparent 50%);
+  background-color: hsla(0, 3%, 37%, 1);
+  background-image: radial-gradient(
+      at 40% 20%,
+      hsla(279, 0%, 38%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 80% 0%, hsla(188, 2%, 13%, 1) 0px, transparent 50%),
+    radial-gradient(at 4% 45%, hsla(354, 1%, 44%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(340, 0%, 0%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(15, 3%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(240, 1%, 32%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(335, 0%, 54%, 1) 0px, transparent 50%);
+  height: 30vh;
+  width: 100%;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner2 {
+  background-color: hsla(0, 0%, 30%, 1);
+  background-image: radial-gradient(
+      at 40% 20%,
+      hsla(0, 0%, 38%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 80% 0%, hsla(8, 17%, 43%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(0, 16%, 23%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(240, 8%, 22%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(0, 18%, 22%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(0, 15%, 29%, 0.88) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343, 7%, 43%, 1) 0px, transparent 50%);
   height: 30vh;
   width: 100%;
   opacity: 1;
@@ -533,16 +557,6 @@ body {
   margin-top: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* ///////////////////////////////////////////////////////////// */
 
 #contact {
@@ -556,7 +570,7 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 40px 0;
-  font: 300 60px 'Oswald', sans-serif;
+  font: 300 60px "Oswald", sans-serif;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 6px;
@@ -574,12 +588,10 @@ body {
 
 /* Left contact page */
 .form-horizontal {
-  /*float: left;*/
-  font-family: 'Lato';
   font-weight: 400;
 }
 
-.form-control, 
+.form-control,
 textarea {
   background-color: #000;
   color: #fff;
@@ -591,19 +603,19 @@ textarea {
   height: 34px;
   width: 400px;
   overflow: hidden;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .alt-send-button {
   width: 100%;
   height: 34px;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .send-text {
   display: block;
   margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
+  font: 700 12px "Lato", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -629,7 +641,7 @@ textarea {
 }
 
 .contact-text {
-  font: 300 18px 'Lato', sans-serif;
+  font: 300 18px "Lato", sans-serif;
   letter-spacing: 1.9px;
   color: #bbb;
 }
@@ -657,7 +669,131 @@ textarea {
   text-decoration: none;
 }
 
-
 hr {
-  border-color: rgba(255,255,255,.6);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.download-btn {
+  display: block;
+  width: 75%;
+  text-align: center;
+  color: white;
+}
+
+.download-btn:hover {
+  text-decoration: none;
+  color: #9fa6b2;
+}
+
+.no-space {
+  line-height: 2;
+}
+
+/* Events */
+
+.home {
+  position: relative;
+  opacity: 0;
+  z-index: 2;
+  transition: 1s all;
+}
+.home.current {
+  opacity: 1;
+}
+
+.events {
+  width: 70%;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 30px;
+  transition: 0.0s all;
+}
+.events p {
+  margin: 20px 0;
+}
+
+.list-item-new {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border-top: 1px solid #e8e8e8;
+  transition: 1s all;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.list-item-new:last-child {
+  border-bottom: 1px solid #e8e8e8;
+  transition: 0.3s all;
+}
+.overlay-list .list-item-new {
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  transform: translateX(50%);
+  transition: 0.3s all;
+}
+.list-item-new:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: -20px;
+  padding: 0 20px;
+  background: transparent;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0);
+  transition: 0.3s all;
+  transform: scaleY(0.1);
+  z-index: 1;
+}
+.home .list-item-new:hover:after {
+  transform: scaleY(1);
+  background-color:hsla(0,0%,52%,1);
+  background-image:
+  radial-gradient(at 0% 100%, hsla(240,15%,55%,0.53) 0px, transparent 50%),
+  radial-gradient(at 72% 0%, hsla(60,7%,51%,0.29) 0px, transparent 50%);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  transition: 0.3s all;
+}
+.list-item-new > * {
+  position: relative;
+  z-index: 2;
+  transition: 0.3s all;
+}
+.list-item-new .date {
+  width: 20%;
+  margin-left: -20%;
+  padding-right: 10%;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.3s all;
+}
+.overlay-list .list-item-new .date {
+  color: white;
+  transition: 0.3s all;
+}
+.home .list-item-new:hover .date {
+  color: rgb(154, 154, 147);
+  transition: 0.3s all;
+}
+.list-item-new .date-day {
+  font-size: 30px;
+}
+.list-item-new .info {
+  padding: 20px;
+  margin-left: -20px;
+}
+.home .list-item-new:hover .info,
+.overlay-list .list-item-new .info {
+  color: white;
+  transition: 0.3s all;
+}
+.list-item-new .info-time {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.list-item-new .info-title {
+  font-size: 24px;
+  line-height: 140%;
 }
