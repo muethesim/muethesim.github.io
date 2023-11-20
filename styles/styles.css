@@ -735,13 +735,14 @@ hr {
   justify-items: center;
   border-top: 1px solid #e8e8e8;
   transition: 1s all;
-  cursor: pointer;
   transition: 0.3s all;
 }
+
 .list-item-new:last-child {
   border-bottom: 1px solid #e8e8e8;
   transition: 0.3s all;
 }
+
 .overlay-list .list-item-new {
   position: absolute;
   bottom: 0;
@@ -749,6 +750,7 @@ hr {
   transform: translateX(50%);
   transition: 0.3s all;
 }
+
 .list-item-new:after {
   content: "";
   position: absolute;
@@ -763,7 +765,8 @@ hr {
   transform: scaleY(0.1);
   z-index: 1;
 }
-.home .list-item-new2:hover:after {
+
+.home .list-item-new:hover:after {
   transform: scaleY(1);
   background-color:hsla(0,0%,52%,1);
   background-image:
@@ -772,11 +775,13 @@ hr {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
   transition: 0.3s all;
 }
+
 .list-item-new > * {
   position: relative;
   z-index: 2;
   transition: 0.3s all;
 }
+
 .list-item-new .date {
   width: 20%;
   margin-left: -20%;
@@ -785,30 +790,37 @@ hr {
   text-align: center;
   transition: 0.3s all;
 }
+
 .overlay-list .list-item-new .date {
   color: white;
   transition: 0.3s all;
 }
-.home .list-item-new2:hover .date {
+
+.home .list-item-new:hover .date {
   color: rgb(154, 154, 147);
   transition: 0.3s all;
 }
+
 .list-item-new .date-day {
   font-size: 30px;
 }
+
 .list-item-new .info {
   padding: 20px;
   margin-left: -20px;
 }
-.home .list-item-new2:hover .info,
+
+.home .list-item-new:hover .info,
 .overlay-list .list-item-new .info {
   color: white;
   transition: 0.3s all;
 }
+
 .list-item-new .info-time {
   font-size: 14px;
   margin-bottom: 6px;
 }
+
 .list-item-new .info-title {
   font-size: 24px;
   line-height: 140%;
@@ -837,4 +849,39 @@ hr {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   object-fit: cover;
+}
+
+
+/* ACHIEVEMENTS */
+
+.achievement-div {
+  border: #000 solid 1px;
+  width: 80%;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  height: fit-content;
+}
+
+.achievement-div:hover {
+  translate: -5px -5px;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
+}
+
+.achievement-header {
+  font-size: 36px;
+}
+
+.achievement-body {
+  padding-top: 10px;
+}
+
+.achievement-body ul {
+  list-style: none;
+}
+
+.achievement-body ul li span{
+  padding-left: 10px;
+}
+
+.achievement-body ul li{
+  margin-top: 8px;
 }
