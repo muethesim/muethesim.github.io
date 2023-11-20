@@ -885,3 +885,10 @@ hr {
 .achievement-body ul li{
   margin-top: 8px;
 }
+
+.achievement-corousel {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 90%;
+}
