@@ -17,7 +17,7 @@ List of Events
 Achievements : 
 ---------------
 
-Can be done as a list of images of as bulleted text. Best Way : Images
+Can be done as a list of images of as bulleted text
 
 
 

@@ -230,23 +230,21 @@
                   >
                 </li>
 
-                <li class="list-item" style="line-height: 1; margin-bottom: 0%; padding-top: 20px;">
-                  <span>Registration Form</span>
-                  <button
-                    class="btn btn-primary send-button"
-                    value="DOWNLOAD"
+                <li
+                  class="list-item"
+                  style="line-height: 1; margin-bottom: 0%; padding-top: 20px"
+                >
+                  <span style="display: block; width: 100%; text-align: center"
+                    >Registration Form</span
                   >
+                  <button class="btn btn-primary send-button" value="DOWNLOAD" onclick="downloadForm()">
                     <div class="alt-send-button">
                       <i class="fa-solid fa-download"></i
-                      ><span class="send-text">DOWNLAOD</span>
+                      ><span class="send-text">DOWNLOAD</span>
                     </div>
                   </button>
                 </li>
-
-                <!-- <li class="list-item no-space">
-                  DOWNLOAD APPLICATION FORM : <br>
-                  <a href="#" class="download-btn btn-primary">Download</a>
-                </li> -->
+                <a href="./assets/files/applicationForm.pdf" download="applicationForm.pdf" id="downLink" style="display: none;"></a>
               </ul>
             </div>
           </div>
@@ -300,6 +298,12 @@
       integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function downloadForm() {
+        const link = document.getElementById("downLink");
+        link.click();
+      }
+    </script>
     <script src="scripts/scripts.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
