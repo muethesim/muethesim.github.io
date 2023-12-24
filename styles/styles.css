@@ -89,6 +89,10 @@ body {
   color: #fff;
 }
 
+.w-100 {
+  max-height: 300px;
+}
+
 .navbar-colored {
   background-color: #fff;
   color: #000;
@@ -174,7 +178,8 @@ body {
 
 .fullscreen-bg {
   position: relative;
-  background: url("../assets/img/banner.png") no-repeat center center fixed;
+  background: url("../assets/img/banner.jpg") no-repeat center center fixed;
+  /* background-opa */
   background-size: cover;
   height: 100vh;
   color: #fff;
